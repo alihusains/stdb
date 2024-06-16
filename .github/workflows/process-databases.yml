@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'database/*.db'
+  workflow_dispatch:
 
 jobs:
   process_databases:
