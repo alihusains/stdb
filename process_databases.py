@@ -13,8 +13,8 @@ for db_file in db_files:
     db_path = os.path.join(database_dir, db_file)
     db_name = os.path.splitext(db_file)[0]
     
-    # Create a directory for the database
-    output_dir = os.path.join(database_dir, db_name)
+    # Create a directory for the database in the root directory
+    output_dir = db_name
     os.makedirs(output_dir, exist_ok=True)
     
     # Connect to the database
